@@ -16,6 +16,7 @@ COLOUR_RED=\033[0;31m
 COLOUR_BLUE=\033[0;34m
 COLOUR_END=\033[0m
 COLOUR_YELLOW=\033[0;33m
+COLOUR_CYAN=\033[0;36m
 
 # ------------  PROJECT  ----------------------------------------------------- #
 NAME	=		libft.a
@@ -108,6 +109,7 @@ all: $(NAME)
 
 -include $(DEPS)
 $(OBJ_DIR)/%.o: $(SRC_DIR)/%.c | $(OBJ_DIR)
+	@printf "$(COLOUR_CYAN)"
 	$(CC) $(CFLGS) $(DFLGS) -c -o $@ $< $(IFLGS)
 
 $(OBJ_DIR):
