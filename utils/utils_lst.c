@@ -37,6 +37,15 @@ void	lst_show(t_list_number *lst)
 	}
 }
 
+void	lst_add_front(t_list_number **lst, t_list_number *new)
+{
+	if (lst && new)
+	{
+		new->next = *lst;
+		*lst = new;
+	}
+}
+
 void	lst_add_back(t_list_number **lst, t_list_number *new)
 {
 	t_list_number	*current;

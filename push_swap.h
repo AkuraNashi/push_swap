@@ -30,11 +30,13 @@ typedef struct s_ps{
 
 
 //////////////////////////////PUSH.C////////////////////////////////////////////
-
+void			pa(t_ps *env);
+void			pb(t_ps *env);
 
 //////////////////////////////UTILS_LST.C///////////////////////////////////////
 void			lst_show(t_list_number *lst);
 void			lst_add_back(t_list_number **lst, t_list_number *new);
+void			lst_add_front(t_list_number **lst, t_list_number *new);
 t_list_number 	*lst_create(int content);
 void			free_lst(t_ps *env);
 

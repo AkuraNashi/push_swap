@@ -26,6 +26,7 @@ void	initialisation(t_ps *env, int ac, char **av)
 	lst_show(env->a);
 	printf("=========================================\n");
 	lst_show(env->b);
+	pb(env);
 	free_lst(env);
 }
 
