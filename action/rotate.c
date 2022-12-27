@@ -1,35 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   push.c                                             :+:      :+:    :+:   */
+/*   rotate.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lcamilo- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/12/22 22:55:17 by lcamilo-          #+#    #+#             */
-/*   Updated: 2022/12/22 22:55:18 by lcamilo-         ###   ########.fr       */
+/*   Created: 2022/12/27 22:05:56 by lcamilo-          #+#    #+#             */
+/*   Updated: 2022/12/27 22:05:57 by lcamilo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../push_swap.h"
 
-void	pa(t_ps *env)
+void	ra(t_ps *env)
 {
 	t_list_number *tmp;
 
-	if (env->b == NULL)
-		return ;
-	tmp = env->b;
-	env->b = env->b->next;
-	lst_add_front(&env->a, tmp);
+	tmp = env->a;
+	while (tmp)
+		tmp = tmp->next;
+}
+void	rb(t_ps env)
+{
+	printf("rb env pas implementer [%p]", &env);
 }
 
-void	pb(t_ps *env)
+void	rra(t_ps env)
 {
-	t_list_number *tmp;
+	printf("rra env pas implementer [%p]", &env);
+}
 
-	if (env->a == NULL)
-		return ;
-	tmp = env->a;
-	env->a = env->a->next;
-	lst_add_front(&env->b, tmp);
+void	rrb(t_ps env)
+{
+	printf("rrb env pas implementer [%p]", &env);
+}
+
+void	rrr(t_ps env)
+{
+	printf("rrr env pas implementer [%p]", &env);
 }

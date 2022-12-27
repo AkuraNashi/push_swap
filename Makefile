@@ -36,6 +36,7 @@ RM			= rm -rf
 SRC 		= 	main.c				\
 				action/swap.c		\
 				action/push.c		\
+				action/rotate.c		\
 				utils/utils_lst.c
 
 # ------------  FILEPATHS  --------------------------------------------------- #

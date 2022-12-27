@@ -45,4 +45,6 @@ void			ss(t_ps *env);
 void			sb(t_ps *env);
 void			sa(t_ps *env);
 
+//////////////////////////////ROTATE.C//////////////////////////////////////////
+void			ra(t_ps *env);
 #endif

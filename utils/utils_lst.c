@@ -19,13 +19,6 @@ void	free_lst(t_ps *env)
 		free(env->a);
 		env->a = env->a->next;
 	}
-	while (env->b)
-	{
-		free(env->b);
-		env->b = env->b->next;
-	}
-	free(env->a);
-	free(env->b);
 }
 
 void	lst_show(t_list_number *lst)

@@ -23,10 +23,10 @@ void	initialisation(t_ps *env, int ac, char **av)
 		lst_add_back(&env->a, lst_create(ft_atoi(av[i])));
 		i++;
 	}
+	printf("========= / Stack a \\ ===========\n");
 	lst_show(env->a);
-	printf("=========================================\n");
+	printf("========= / Stack b \\ ===========\n");
 	lst_show(env->b);
-	pb(env);
 	free_lst(env);
 }
 
