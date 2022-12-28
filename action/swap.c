@@ -17,6 +17,8 @@ void	sa(t_ps *env)
 	t_list_number	*tmp1;
 	t_list_number	*tmp2;
 
+	if (lst_len(env->a) <= 1)
+		return ;
 	tmp1 = env->a->next;
 	tmp2 = tmp1->next;
 	tmp1->next = env->a;
@@ -29,6 +31,8 @@ void	sb(t_ps *env)
 	t_list_number	*tmp1;
 	t_list_number	*tmp2;
 
+	if (lst_len(env->b) <= 1)
+		return ;
 	tmp1 = env->b->next;
 	tmp2 = tmp1->next;
 	tmp1->next = env->b;

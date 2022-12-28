@@ -33,10 +33,11 @@ CC			= @cc
 RM			= rm -rf
 
 # ------------  SOURCE FILES  ------------------------------------------------ #
-SRC 		= 	main.c				\
-				action/swap.c		\
-				action/push.c		\
-				action/rotate.c		\
+SRC 		= 	main.c						\
+				action/swap.c				\
+				action/push.c				\
+				action/rotate.c				\
+				action/reverse_rotate.c		\
 				utils/utils_lst.c
 
 # ------------  FILEPATHS  --------------------------------------------------- #

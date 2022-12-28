@@ -63,3 +63,18 @@ t_list_number	*lst_create(int content)
 	tmp->next = NULL;
 	return (tmp);
 }
+
+int lst_len(t_list_number *lst)
+{
+	int	count;
+
+	if (!lst)
+		return (0);
+	count = 1;
+	while (lst->next)
+	{
+		lst = lst->next;
+		count++;
+	}
+	return (count);
+}

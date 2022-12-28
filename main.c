@@ -12,7 +12,7 @@
 
 #include "push_swap.h"
 
-void	initialisation(t_ps *env, int ac, char **av)
+void	multiple_args(t_ps *env, int ac, char **av)
 {
 	int	i;
 
@@ -21,6 +21,25 @@ void	initialisation(t_ps *env, int ac, char **av)
 	while (i < ac)
 	{
 		lst_add_back(&env->a, lst_create(ft_atoi(av[i])));
+		i++;
+	}
+	printf("========= / Stack a \\ ===========\n");
+	lst_show(env->a);
+	printf("========= / Stack b \\ ===========\n");
+	lst_show(env->b);
+	free_lst(env);
+}
+
+void	two_args(t_ps *env, char **av)
+{
+	char	**str;
+	int		i;
+	(void)env;
+	str = ft_split(av[1], ' ');
+	i = 0;
+	while (str[i])
+	{
+		lst_add_back(&env->a, lst_create(ft_atoi(str[i])));
 		i++;
 	}
 	printf("========= / Stack a \\ ===========\n");
@@ -40,10 +59,15 @@ int	main(int ac, char **av)
 {
 	t_ps	env;
 
-	if (ac >= 2)
+	if (ac > 2)
 	{
 		ft_printf("Ac : [%d]\n", ac);
-		initialisation(&env, ac, av);
+		multiple_args(&env, ac, av);
+	}
+	else if (ac == 2)
+	{
+		printf("test\n");
+		two_args(&env, av);
 	}
 	else
 		error();

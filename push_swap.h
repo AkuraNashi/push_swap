@@ -39,6 +39,7 @@ void			lst_add_back(t_list_number **lst, t_list_number *new);
 void			lst_add_front(t_list_number **lst, t_list_number *new);
 t_list_number 	*lst_create(int content);
 void			free_lst(t_ps *env);
+int 			lst_len(t_list_number *lst);
 
 //////////////////////////////SWAP.C////////////////////////////////////////////
 void			ss(t_ps *env);
@@ -47,4 +48,9 @@ void			sa(t_ps *env);
 
 //////////////////////////////ROTATE.C//////////////////////////////////////////
 void			ra(t_ps *env);
+void			rb(t_ps *env);
+void			rr(t_ps *env);
+void			rra(t_ps *env);
+void			rrb(t_ps *env);
+void			rrr(t_ps *env);
 #endif

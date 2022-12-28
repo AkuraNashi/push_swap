@@ -1,35 +1,59 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   push.c                                             :+:      :+:    :+:   */
+/*   reverse_rotate.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lcamilo- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/12/22 22:55:17 by lcamilo-          #+#    #+#             */
-/*   Updated: 2022/12/22 22:55:18 by lcamilo-         ###   ########.fr       */
+/*   Created: 2022/12/28 16:10:54 by lcamilo-          #+#    #+#             */
+/*   Updated: 2022/12/28 16:10:55 by lcamilo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../push_swap.h"
 
-void	pa(t_ps *env)
+void	rra(t_ps *env)
 {
 	t_list_number	*tmp;
-
-	if (!env->b)
-		return ;
-	tmp = env->b;
-	env->b = env->b->next;
-	lst_add_front(&env->a, tmp);
-}
-
-void	pb(t_ps *env)
-{
-	t_list_number	*tmp;
+	t_list_number	*old_head;
+	t_list_number	*new_last;
 
 	if (!env->a)
 		return ;
 	tmp = env->a;
-	env->a = env->a->next;
+	old_head = env->a;
+	while (tmp->next)
+	{
+		new_last = tmp;
+		tmp = tmp->next;
+	}
+	lst_add_front(&env->a, tmp);
+	tmp->next = old_head;
+	new_last->next = NULL;
+}
+
+void	rrb(t_ps *env)
+{
+	t_list_number	*tmp;
+	t_list_number	*old_head;
+	t_list_number	*new_last;
+
+	if (!env->b)
+		return ;
+	tmp = env->b;
+	old_head = env->b;
+	while (tmp->next)
+	{
+		new_last = tmp;
+		tmp = tmp->next;
+	}
 	lst_add_front(&env->b, tmp);
+	tmp->next = old_head;
+	new_last->next = NULL;
+}
+
+void	rrr(t_ps *env)
+{
+	rra(env);
+	rrb(env);
 }

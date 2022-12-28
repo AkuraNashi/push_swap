@@ -14,28 +14,34 @@
 
 void	ra(t_ps *env)
 {
-	t_list_number *tmp;
+	t_list_number	*head;
+	t_list_number	*new_list;
 
-	tmp = env->a;
-	while (tmp)
-		tmp = tmp->next;
-}
-void	rb(t_ps env)
-{
-	printf("rb env pas implementer [%p]", &env);
-}
-
-void	rra(t_ps env)
-{
-	printf("rra env pas implementer [%p]", &env);
+	if (!env->a)
+		return ;
+	head = env->a;
+	new_list = env->a->next;
+	lst_add_back(&env->a, head);
+	head->next = NULL;
+	env->a = new_list;
 }
 
-void	rrb(t_ps env)
+void	rb(t_ps *env)
 {
-	printf("rrb env pas implementer [%p]", &env);
+	t_list_number	*head;
+	t_list_number	*new_list;
+
+	if (!env->b)
+		return ;
+	head = env->b;
+	new_list = env->b->next;
+	lst_add_back(&env->b, head);
+	head->next = NULL;
+	env->b = new_list;
 }
 
-void	rrr(t_ps env)
+void	rr(t_ps *env)
 {
-	printf("rrr env pas implementer [%p]", &env);
+	ra(env);
+	rb(env);
 }
