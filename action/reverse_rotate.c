@@ -30,6 +30,7 @@ void	rra(t_ps *env)
 	lst_add_front(&env->a, tmp);
 	tmp->next = old_head;
 	new_last->next = NULL;
+	ft_printf("rra\n");
 }
 
 void	rrb(t_ps *env)
@@ -50,10 +51,12 @@ void	rrb(t_ps *env)
 	lst_add_front(&env->b, tmp);
 	tmp->next = old_head;
 	new_last->next = NULL;
+	ft_printf("rrb\n");
 }
 
 void	rrr(t_ps *env)
 {
 	rra(env);
 	rrb(env);
+	ft_printf("rrr\n");
 }

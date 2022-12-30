@@ -1,37 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   push.c                                             :+:      :+:    :+:   */
+/*   sort_3.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lcamilo- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/12/22 22:55:17 by lcamilo-          #+#    #+#             */
-/*   Updated: 2022/12/22 22:55:18 by lcamilo-         ###   ########.fr       */
+/*   Created: 2022/12/29 13:25:42 by lcamilo-          #+#    #+#             */
+/*   Updated: 2022/12/29 13:25:43 by lcamilo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../push_swap.h"
 
-void	pa(t_ps *env)
+void	sort_five(t_ps *env)
 {
-	t_list_number	*tmp;
+	t_list_number *b;
 
-	if (!env->b)
-		return ;
-	tmp = env->b;
-	env->b = env->b->next;
-	lst_add_front(&env->a, tmp);
-	ft_printf("pa\n");
-}
-
-void	pb(t_ps *env)
-{
-	t_list_number	*tmp;
-
-	if (!env->a)
-		return ;
-	tmp = env->a;
-	env->a = env->a->next;
-	lst_add_front(&env->b, tmp);
-	ft_printf("pb\n");
+	//Chopper plus petit et plus grand pour mettre en pb
+	pb(env);
+	pb(env);
+	b = env->b;
+	sort_three(env);
+	if (b->value < b->next->value)
+		sb(env);
+	pa(env);
+	ra(env);
+	pa(env);
 }

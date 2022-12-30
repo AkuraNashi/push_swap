@@ -24,6 +24,7 @@ void	sa(t_ps *env)
 	tmp1->next = env->a;
 	env->a->next = tmp2;
 	env->a = tmp1;
+	ft_printf("sa\n");
 }
 
 void	sb(t_ps *env)
@@ -38,10 +39,12 @@ void	sb(t_ps *env)
 	tmp1->next = env->b;
 	env->b->next = tmp2;
 	env->b = tmp1;
+	ft_printf("sb\n");
 }
 
 void	ss(t_ps *env)
 {
 	sa(env);
 	sb(env);
+	ft_printf("ss\n");
 }

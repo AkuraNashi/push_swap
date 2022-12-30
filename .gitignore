@@ -60,3 +60,5 @@ pft_2019/
 
 push_swap_test
 *.excalidraw
+pyviz.py
+push_swap_visualizer

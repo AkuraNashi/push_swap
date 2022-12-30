@@ -1,37 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   push.c                                             :+:      :+:    :+:   */
+/*   solver.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lcamilo- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/12/22 22:55:17 by lcamilo-          #+#    #+#             */
-/*   Updated: 2022/12/22 22:55:18 by lcamilo-         ###   ########.fr       */
+/*   Created: 2022/12/29 13:59:43 by lcamilo-          #+#    #+#             */
+/*   Updated: 2022/12/29 13:59:44 by lcamilo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../push_swap.h"
 
-void	pa(t_ps *env)
+void	solver(t_ps *env)
 {
-	t_list_number	*tmp;
+	int	len;
 
-	if (!env->b)
-		return ;
-	tmp = env->b;
-	env->b = env->b->next;
-	lst_add_front(&env->a, tmp);
-	ft_printf("pa\n");
+	len = lst_len(env->a);
+	if (len <= 5)
+		solve_small_lst(env, len);
 }
 
-void	pb(t_ps *env)
+void	solve_small_lst(t_ps *env, int len)
 {
-	t_list_number	*tmp;
-
-	if (!env->a)
-		return ;
-	tmp = env->a;
-	env->a = env->a->next;
-	lst_add_front(&env->b, tmp);
-	ft_printf("pb\n");
+	if (len == 2)
+		sa(env);
+	else if (len == 3)
+		sort_three(env);
+	else
+		sort_five(env);
 }

@@ -8,6 +8,17 @@
   <component name="ChangeListManager">
     <list default="true" id="75edfb0a-f5ed-409c-aa1b-135784eb616f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/action/push.c" beforeDir="false" afterPath="$PROJECT_DIR$/action/push.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/action/reverse_rotate.c" beforeDir="false" afterPath="$PROJECT_DIR$/action/reverse_rotate.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/action/rotate.c" beforeDir="false" afterPath="$PROJECT_DIR$/action/rotate.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/action/swap.c" beforeDir="false" afterPath="$PROJECT_DIR$/action/swap.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/push_swap" beforeDir="false" afterPath="$PROJECT_DIR$/push_swap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/push_swap.h" beforeDir="false" afterPath="$PROJECT_DIR$/push_swap.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/utils_lst.c" beforeDir="false" afterPath="$PROJECT_DIR$/utils/utils_lst.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,20 +42,21 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "full.screen.before.presentation.mode": "true",
-    "last_opened_file_path": "/Users/lcamilo-/Documents/C 42/push_swap",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;full.screen.before.presentation.mode&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/lcamilo-/Documents/C 42/push_swap&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;structure.view.defaults.are.configured&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -61,11 +73,30 @@
       <workItem from="1672175106254" duration="2184000" />
       <workItem from="1672181709065" duration="1982000" />
       <workItem from="1672223431438" duration="1300000" />
-      <workItem from="1672230571778" duration="3642000" />
+      <workItem from="1672230571778" duration="3910000" />
+      <workItem from="1672270113372" duration="458000" />
+      <workItem from="1672316500540" duration="2322000" />
+      <workItem from="1672322378118" duration="1192000" />
+      <workItem from="1672323715981" duration="3225000" />
+      <workItem from="1672330801147" duration="2000" />
+      <workItem from="1672342157097" duration="3755000" />
+      <workItem from="1672357045790" duration="1325000" />
+      <workItem from="1672397922851" duration="1264000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
