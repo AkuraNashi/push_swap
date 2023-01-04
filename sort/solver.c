@@ -21,6 +21,8 @@ void	solver(t_ps *env)
 		solve_small_lst(env, len);
 }
 
+void	solve(t_ps *env);
+
 void	solve_small_lst(t_ps *env, int len)
 {
 	if (len == 2)

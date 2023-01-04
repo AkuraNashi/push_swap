@@ -24,6 +24,7 @@ void	ra(t_ps *env)
 	lst_add_back(&env->a, head);
 	head->next = NULL;
 	env->a = new_list;
+	env->action++;
 	ft_printf("ra\n");
 }
 
@@ -39,6 +40,7 @@ void	rb(t_ps *env)
 	lst_add_back(&env->b, head);
 	head->next = NULL;
 	env->b = new_list;
+	env->action++;
 	ft_printf("rb\n");
 }
 
@@ -46,5 +48,6 @@ void	rr(t_ps *env)
 {
 	ra(env);
 	rb(env);
+	env->action++;
 	ft_printf("rr\n");
 }

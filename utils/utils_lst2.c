@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   utils_lst.c                                        :+:      :+:    :+:   */
+/*   utils_lst2.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lcamilo- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -12,61 +12,60 @@
 
 #include "../push_swap.h"
 
-void	lst_show(t_list_number *lst)
+int	solved(t_ps *env)
 {
+	t_list_number	*tmp;
+	t_list_number	*head;
+
+	head = env->a;
+	while (head->next)
+	{
+		tmp = head->next;
+		if (head->value < tmp->value)
+			head = head->next;
+		else
+			return (0);
+	}
+	free_lst(env);
+	error();
+	return (1);
+}
+
+void	unique(t_ps *env)
+{
+	t_list_number	*lst;
+	t_list_number	*tmp;
+
+	lst = env->a;
 	while (lst)
 	{
-		ft_printf("Value : [%d]\n", lst->value);
+		tmp = lst->next;
+		check_unique(env, lst->value, tmp);
 		lst = lst->next;
 	}
 }
 
-void	lst_add_front(t_list_number **lst, t_list_number *new)
-{
-	if (lst && new)
-	{
-		new->next = *lst;
-		*lst = new;
-	}
-}
-
-void	lst_add_back(t_list_number **lst, t_list_number *new)
-{
-	t_list_number	*current;
-
-	if (!*lst)
-		*lst = new;
-	else
-	{
-		current = *lst;
-		while (current->next)
-			current = current->next;
-		current->next = new;
-	}
-}
-
-t_list_number	*lst_create(int content, int i)
+void	check_unique(t_ps *env, int value, t_list_number *lst)
 {
 	t_list_number	*tmp;
 
-	tmp = malloc(sizeof(tmp));
-	tmp->value = content;
-	tmp->index = i;
-	tmp->next = NULL;
-	return (tmp);
+	tmp = lst;
+	while (tmp)
+	{
+		if (value == tmp->value)
+		{
+			free_lst(env);
+			error();
+		}
+		tmp = tmp->next;
+	}
 }
 
-int	lst_len(t_list_number *lst)
+void	free_lst(t_ps *env)
 {
-	int	count;
-
-	if (!lst)
-		return (0);
-	count = 1;
-	while (lst->next)
+	while (env->a)
 	{
-		lst = lst->next;
-		count++;
+		free(env->a);
+		env->a = env->a->next;
 	}
-	return (count);
 }

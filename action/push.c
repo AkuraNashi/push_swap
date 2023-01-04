@@ -21,6 +21,7 @@ void	pa(t_ps *env)
 	tmp = env->b;
 	env->b = env->b->next;
 	lst_add_front(&env->a, tmp);
+	env->action++;
 	ft_printf("pa\n");
 }
 
@@ -33,5 +34,6 @@ void	pb(t_ps *env)
 	tmp = env->a;
 	env->a = env->a->next;
 	lst_add_front(&env->b, tmp);
+	env->action++;
 	ft_printf("pb\n");
 }

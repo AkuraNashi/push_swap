@@ -20,7 +20,7 @@ void	multiple_args(t_ps *env, int ac, char **av)
 	env->b = NULL;
 	while (i < ac)
 	{
-		lst_add_back(&env->a, lst_create(ft_atoi(av[i])));
+		lst_add_back(&env->a, lst_create(ft_atoi(av[i]), i));
 		i++;
 	}
 }
@@ -34,7 +34,7 @@ void	two_args(t_ps *env, char **av)
 	i = 0;
 	while (str[i])
 	{
-		lst_add_back(&env->a, lst_create(ft_atoi(str[i])));
+		lst_add_back(&env->a, lst_create(ft_atoi(str[i]), i));
 		i++;
 	}
 	while (str[i])
@@ -55,6 +55,7 @@ int	main(int ac, char **av)
 {
 	t_ps	env;
 
+	env.action = 0;
 	if (ac > 2)
 		multiple_args(&env, ac, av);
 	else if (ac == 2)
@@ -63,13 +64,10 @@ int	main(int ac, char **av)
 		error();
 	unique(&env);
 	if (solved(&env))
-		return(0);
-//	printf("======== / Debut  \\ ============\n");
-//	lst_show(env.a);
-//	printf("======== / Action \\ ============\n");
+		return (0);
+//	solve_cheat(&env);
 	solver(&env);
-//	printf("======== /  Fin   \\ ============\n");
-//	lst_show(env.a);
 	free_lst(&env);
+	printf("nb action : [%d]\n", env.action);
 	return (0);
 }

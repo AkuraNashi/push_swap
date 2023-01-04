@@ -7,8 +7,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75edfb0a-f5ed-409c-aa1b-135784eb616f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/action/push.c" beforeDir="false" afterPath="$PROJECT_DIR$/action/push.c" afterDir="false" />
@@ -18,6 +16,8 @@
       <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/push_swap" beforeDir="false" afterPath="$PROJECT_DIR$/push_swap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/push_swap.h" beforeDir="false" afterPath="$PROJECT_DIR$/push_swap.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sort/solver.c" beforeDir="false" afterPath="$PROJECT_DIR$/sort/solver.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sort/sort_5.c" beforeDir="false" afterPath="$PROJECT_DIR$/sort/sort_5.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/utils_lst.c" beforeDir="false" afterPath="$PROJECT_DIR$/utils/utils_lst.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -82,6 +82,12 @@
       <workItem from="1672342157097" duration="3755000" />
       <workItem from="1672357045790" duration="1325000" />
       <workItem from="1672397922851" duration="1264000" />
+      <workItem from="1672778820798" duration="2316000" />
+      <workItem from="1672818480764" duration="542000" />
+      <workItem from="1672819813453" duration="892000" />
+      <workItem from="1672828621211" duration="6000" />
+      <workItem from="1672834341423" duration="2640000" />
+      <workItem from="1672840876073" duration="2000" />
     </task>
     <servers />
   </component>
