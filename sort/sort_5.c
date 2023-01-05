@@ -33,17 +33,21 @@ int	found_highest(t_ps *env)
 {
 	t_list_number	*head;
 	t_list_number	*tmp;
+	int 			i;
 
+	i = 0;
 	head = env->a;
 	tmp = env->a;
 	while (env->a)
 	{
 		if (tmp->value < env->a->value)
 			tmp = env->a;
+		i++;
+		env->a->index = i;
 		env->a = env->a->next;
 	}
 	env->a = head;
-	return (tmp->index - 1);
+	return (tmp->index);
 }
 
 void	place_lowest(t_ps *env)
@@ -99,7 +103,6 @@ void	sort_five(t_ps *env)
 	place_lowest(env);
 	pb(env);
 	place_highest(env);
-	lst_show(env->a);
 	pb(env);
 	b = env->b;
 	sort_three(env);
