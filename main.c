@@ -37,6 +37,7 @@ void	two_args(t_ps *env, char **av)
 		lst_add_back(&env->a, lst_create(ft_atoi(str[i]), i));
 		i++;
 	}
+	i = 0;
 	while (str[i])
 	{
 		free(str[i]);
