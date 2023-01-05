@@ -24,8 +24,6 @@ void	solver(t_ps *env)
 	len = lst_len(env->a);
 	if (len <= 5)
 		solve_small_lst(env, len);
-//	else
-//		solve_stack();
 }
 
 void	solve(t_ps *env);

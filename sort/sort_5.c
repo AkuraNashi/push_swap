@@ -12,10 +12,10 @@
 
 #include "../push_swap.h"
 
-int found_lowest(t_ps *env)
+int	found_lowest(t_ps *env)
 {
-	t_list_number *head;
-	t_list_number *tmp;
+	t_list_number	*head;
+	t_list_number	*tmp;
 
 	head = env->a;
 	tmp = env->a;
@@ -29,10 +29,10 @@ int found_lowest(t_ps *env)
 	return (tmp->index);
 }
 
-int found_highest(t_ps *env)
+int	found_highest(t_ps *env)
 {
-	t_list_number *head;
-	t_list_number *tmp;
+	t_list_number	*head;
+	t_list_number	*tmp;
 
 	head = env->a;
 	tmp = env->a;
@@ -48,10 +48,10 @@ int found_highest(t_ps *env)
 
 void	place_lowest(t_ps *env)
 {
-	int i;
+	int	i;
 
 	i = found_lowest(env);
-	if(i <= 3)
+	if (i <= 3)
 	{
 		while (i != 1)
 		{
@@ -71,10 +71,10 @@ void	place_lowest(t_ps *env)
 
 void	place_highest(t_ps *env)
 {
-	int i;
+	int	i;
 
 	i = found_highest(env);
-	if(i <= 2)
+	if (i <= 2)
 	{
 		while (i != 1)
 		{
@@ -94,7 +94,7 @@ void	place_highest(t_ps *env)
 
 void	sort_five(t_ps *env)
 {
-	t_list_number *b;
+	t_list_number	*b;
 
 	place_lowest(env);
 	pb(env);

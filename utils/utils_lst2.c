@@ -27,7 +27,6 @@ int	solved(t_ps *env)
 			return (0);
 	}
 	free_lst(env);
-//	error();
 	return (1);
 }
 
@@ -63,9 +62,9 @@ void	check_unique(t_ps *env, int value, t_list_number *lst)
 
 void	set_index(t_list_number *lst)
 {
-	int tmp_idx;
-	t_list_number *lst_tmp;
-	t_list_number *lst_tmp2;
+	int				tmp_idx;
+	t_list_number	*lst_tmp;
+	t_list_number	*lst_tmp2;
 
 	lst_tmp = lst;
 	while (lst_tmp)
@@ -79,7 +78,7 @@ void	set_index(t_list_number *lst)
 			lst_tmp2 = lst_tmp2->next;
 		}
 		lst_tmp->index = tmp_idx;
-		lst_tmp=lst_tmp->next;
+		lst_tmp = lst_tmp->next;
 	}
 }
 
