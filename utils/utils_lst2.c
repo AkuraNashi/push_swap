@@ -77,16 +77,21 @@ void	set_index(t_list_number *lst)
 				++tmp_idx;
 			lst_tmp2 = lst_tmp2->next;
 		}
-		lst_tmp->index = tmp_idx;
+		lst_tmp->r_index = tmp_idx;
 		lst_tmp = lst_tmp->next;
 	}
 }
 
 void	free_lst(t_ps *env)
 {
-	while (env->a)
+	t_list_number *lst;
+	t_list_number *lst_tmp;
+
+	lst = env->a;
+	while (lst)
 	{
-		free(env->a);
-		env->a = env->a->next;
+		lst_tmp = lst->next;
+		free(lst);
+		lst = lst_tmp;
 	}
 }

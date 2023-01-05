@@ -99,6 +99,7 @@ void	sort_five(t_ps *env)
 	place_lowest(env);
 	pb(env);
 	place_highest(env);
+	lst_show(env->a);
 	pb(env);
 	b = env->b;
 	sort_three(env);

@@ -18,13 +18,13 @@
 typedef struct s_list_number{
 	int				value;
 	int				index;
+	int				r_index;
 	struct s_list_number	*next;
 }		t_list_number;
 
 typedef struct s_ps{
 	t_list_number *a;
 	t_list_number *b;
-	t_list_number *s;
 	int action;
 }		t_ps;
 

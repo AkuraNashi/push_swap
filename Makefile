@@ -28,7 +28,7 @@ SRC_PATH	= ./
 HEADERS		= incl
 
 # ------------  FLAGS  ------------------------------------------------------- #
-CFLAGS 		= -Wall -Wextra -Werror
+CFLAGS 		= -Wall -Wextra -Werror -fsanitize=address
 CC			= @cc
 RM			= rm -rf
 

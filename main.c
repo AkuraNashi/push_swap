@@ -56,7 +56,7 @@ int	main(int ac, char **av)
 {
 	t_ps	env;
 
-	env.action = 0;
+	env = (t_ps){.action = 0, .a = NULL, .b = NULL};
 	if (ac > 2)
 		multiple_args(&env, ac, av);
 	else if (ac == 2)
@@ -66,8 +66,9 @@ int	main(int ac, char **av)
 	unique(&env);
 	if (solved(&env))
 		return (0);
-//	set_index(env.a);
+	set_index(env.a);
 	solver(&env);
+//	lst_show(env.a);
 	free_lst(&env);
 	printf("nb action : [%d]\n", env.action);
 	return (0);
