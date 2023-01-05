@@ -61,11 +61,11 @@ int	main(int ac, char **av)
 	else if (ac == 2)
 		two_args(&env, av);
 	else
-		error();
+		return (0);
 	unique(&env);
 	if (solved(&env))
 		return (0);
-//	solve_cheat(&env);
+//	set_index(env.a);
 	solver(&env);
 	free_lst(&env);
 	printf("nb action : [%d]\n", env.action);

@@ -17,9 +17,12 @@ t_list_number	*get_lowest(t_list_number *a)
 	t_list_number *low;
 
 	low = a;
+	printf("Entrer\n");
+	printf("\na : \n");
+	lst_show(a);
+	printf("=====================\n");
 	while (a)
 	{
-		printf("1\n");
 		if (low->value > a->value)
 			low = a;
 		a = a->next;
@@ -30,21 +33,13 @@ t_list_number	*get_lowest(t_list_number *a)
 void	solve_cheat(t_ps *env)
 {
 	t_list_number *a;
-	t_list_number *tmp;
-	int i;
-	int	j;
 
 	a = env->a;
-	i = 0;
-	j = lst_len(a);
-	while (i < j)
+	while (a)
 	{
-		tmp = a;
+		env->s = get_lowest(a);
 		a = a->next;
-//		lst_add_back(&env->s, get_lowest(tmp));
-		i++;
+		printf("S : \n");
+		lst_show(env->s);
 	}
-	printf("========== K ===========\n");
-	lst_show(env->s);
-	printf("\n");
 }

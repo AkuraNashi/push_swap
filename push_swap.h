@@ -49,6 +49,7 @@ int				solved(t_ps *env);
 void			unique (t_ps *env);
 void			check_unique(t_ps *env, int value, t_list_number *lst);
 void			free_lst(t_ps *env);
+void			set_index(t_list_number *lst);
 
 //////////////////////////////SWAP.C////////////////////////////////////////////
 void			ss(t_ps *env);

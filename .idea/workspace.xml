@@ -8,17 +8,13 @@
   <component name="ChangeListManager">
     <list default="true" id="75edfb0a-f5ed-409c-aa1b-135784eb616f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/action/push.c" beforeDir="false" afterPath="$PROJECT_DIR$/action/push.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/action/reverse_rotate.c" beforeDir="false" afterPath="$PROJECT_DIR$/action/reverse_rotate.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/action/rotate.c" beforeDir="false" afterPath="$PROJECT_DIR$/action/rotate.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/action/swap.c" beforeDir="false" afterPath="$PROJECT_DIR$/action/swap.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/push_swap" beforeDir="false" afterPath="$PROJECT_DIR$/push_swap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/push_swap.h" beforeDir="false" afterPath="$PROJECT_DIR$/push_swap.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sort/solve_cheat.c" beforeDir="false" afterPath="$PROJECT_DIR$/sort/solve_cheat.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sort/solver.c" beforeDir="false" afterPath="$PROJECT_DIR$/sort/solver.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sort/sort_5.c" beforeDir="false" afterPath="$PROJECT_DIR$/sort/sort_5.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/utils_lst.c" beforeDir="false" afterPath="$PROJECT_DIR$/utils/utils_lst.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/utils_lst2.c" beforeDir="false" afterPath="$PROJECT_DIR$/utils/utils_lst2.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +83,10 @@
       <workItem from="1672819813453" duration="892000" />
       <workItem from="1672828621211" duration="6000" />
       <workItem from="1672834341423" duration="2640000" />
-      <workItem from="1672840876073" duration="2000" />
+      <workItem from="1672840876073" duration="4675000" />
+      <workItem from="1672850820006" duration="3961000" />
+      <workItem from="1672875484089" duration="2000" />
+      <workItem from="1672924099751" duration="2168000" />
     </task>
     <servers />
   </component>

@@ -60,10 +60,8 @@ int	lst_len(t_list_number *lst)
 {
 	int	count;
 
-	if (!lst)
-		return (0);
-	count = 1;
-	while (lst->next)
+	count = 0;
+	while (lst)
 	{
 		lst = lst->next;
 		count++;
