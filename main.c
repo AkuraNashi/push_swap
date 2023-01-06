@@ -64,8 +64,6 @@ int	main(int ac, char **av)
 	else
 		return (0);
 	unique(&env);
-	if (solved(&env))
-		return (0);
 	set_index(env.a);
 	solver(&env);
 	lst_show(env.a);

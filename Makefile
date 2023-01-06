@@ -41,7 +41,6 @@ SRC 		= 	main.c						\
 				utils/utils_lst.c			\
 				utils/utils_lst2.c			\
 				sort/sort_3.c				\
-				sort/sort_5.c				\
 				sort/solver.c
 
 # ------------  FILEPATHS  --------------------------------------------------- #
