@@ -30,10 +30,10 @@ void	sort_three(t_ps *env)
 		sa(env);
 		ra(env);
 	}
-	else if (one < two && three < two)
+	else if (one > two && three < two && two > three)
 	{
-		printf("1\n");
-		ra(env);
+		sa(env);
+		rra(env);
 	}
 	else if (three > two && one > three && two < one)
 		ra(env);

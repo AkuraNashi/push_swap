@@ -39,7 +39,7 @@ void	solve(t_ps *env)
 		else
 		{
 			i = 1;
-			while (i < idx)
+			while (i < idx && found_lowest(env) != 1)
 			{
 				if (lst_len(env->a) / 2 > idx)
 					ra(env);
@@ -52,4 +52,25 @@ void	solve(t_ps *env)
 	sort_three(env);
 	while (lst_len(env->b) != 0)
 		pa(env);
+}
+
+int	found_lowest(t_ps *env)
+{
+	t_list_number	*head;
+	t_list_number	*tmp;
+	int				i;
+
+	i = 0;
+	head = env->a;
+	tmp = env->a;
+	while (env->a)
+	{
+		if (tmp->value > env->a->value)
+			tmp = env->a;
+		i++;
+		env->a->index = i;
+		env->a = env->a->next;
+	}
+	env->a = head;
+	return (tmp->index);
 }

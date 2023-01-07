@@ -7,15 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75edfb0a-f5ed-409c-aa1b-135784eb616f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/push_swap" beforeDir="false" afterPath="$PROJECT_DIR$/push_swap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sort/solver.c" beforeDir="false" afterPath="$PROJECT_DIR$/sort/solver.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sort/sort_3.c" beforeDir="false" afterPath="$PROJECT_DIR$/sort/sort_3.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sort/sort_5.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sort/sort_medium.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/utils_lst.c" beforeDir="false" afterPath="$PROJECT_DIR$/utils/utils_lst.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,6 +86,7 @@
       <workItem from="1672924099751" duration="2168000" />
       <workItem from="1672954272090" duration="2851000" />
       <workItem from="1673001905164" duration="1921000" />
+      <workItem from="1673089557235" duration="1044000" />
     </task>
     <servers />
   </component>

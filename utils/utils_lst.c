@@ -16,7 +16,7 @@ void	lst_show(t_list_number *lst)
 {
 	while (lst)
 	{
-		ft_printf("Value : [%d]\n", lst->value);
+		ft_printf("Value : [%d] idx : [%d]\n", lst->value, lst->index);
 		lst = lst->next;
 	}
 }
