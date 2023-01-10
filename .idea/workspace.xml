@@ -7,11 +7,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75edfb0a-f5ed-409c-aa1b-135784eb616f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/push_swap" beforeDir="false" afterPath="$PROJECT_DIR$/push_swap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/push_swap.h" beforeDir="false" afterPath="$PROJECT_DIR$/push_swap.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sort/solver.c" beforeDir="false" afterPath="$PROJECT_DIR$/sort/solver.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sort/sort_3.c" beforeDir="false" afterPath="$PROJECT_DIR$/sort/sort_3.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/utils_lst.c" beforeDir="false" afterPath="$PROJECT_DIR$/utils/utils_lst.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/utils_lst2.c" beforeDir="false" afterPath="$PROJECT_DIR$/utils/utils_lst2.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +40,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
@@ -86,7 +90,13 @@
       <workItem from="1672924099751" duration="2168000" />
       <workItem from="1672954272090" duration="2851000" />
       <workItem from="1673001905164" duration="1921000" />
-      <workItem from="1673089557235" duration="1044000" />
+      <workItem from="1673089557235" duration="1252000" />
+      <workItem from="1673097041287" duration="1290000" />
+      <workItem from="1673116210176" duration="1234000" />
+      <workItem from="1673280284828" duration="3701000" />
+      <workItem from="1673291512912" duration="1372000" />
+      <workItem from="1673345301160" duration="2392000" />
+      <workItem from="1673359469044" duration="1938000" />
     </task>
     <servers />
   </component>

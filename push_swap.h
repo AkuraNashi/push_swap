@@ -26,6 +26,7 @@ typedef struct s_ps{
 	t_list_number *a;
 	t_list_number *b;
 	int action;
+	int len;
 }		t_ps;
 
 //////////////////////////////MAIN.C////////////////////////////////////////////

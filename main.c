@@ -63,10 +63,11 @@ int	main(int ac, char **av)
 		two_args(&env, av);
 	else
 		return (0);
+	env.len = lst_len(env.a);
 	unique(&env);
 	set_index(env.a);
 	solver(&env);
-	lst_show(env.a);
+//	lst_show(env.b);
 	free_lst(&env);
 	printf("nb action : [%d]\n", env.action);
 	return (0);

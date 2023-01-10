@@ -26,7 +26,6 @@ int	solved(t_ps *env)
 		else
 			return (0);
 	}
-	free_lst(env);
 	return (1);
 }
 
@@ -84,8 +83,8 @@ void	set_index(t_list_number *lst)
 
 void	free_lst(t_ps *env)
 {
-	t_list_number *lst;
-	t_list_number *lst_tmp;
+	t_list_number	*lst;
+	t_list_number	*lst_tmp;
 
 	lst = env->a;
 	while (lst)
