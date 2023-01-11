@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   solver.c                                           :+:      :+:    :+:   */
+/*   sort_small.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lcamilo- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -12,55 +12,30 @@
 
 #include "../push_swap.h"
 
-void	sort_stack_b(t_ps *env)
+void	solve(t_ps *env)
 {
 	int	idx;
 	int	i;
 
-	while (lst_len(env->b) != 0)
+	while (lst_len(env->a) != 3)
 	{
-		idx = found_highest(env);
+		idx = found_lowest(env);
 		if (idx == 1)
-			pa(env);
+			pb(env);
 		else
 		{
 			i = 1;
-			while (i < idx && found_highest(env) != 1)
+			while (i < idx && found_lowest(env) != 1)
 			{
-				if (lst_len(env->b) / 2 > idx)
-					rb(env);
+				if (lst_len(env->a) / 2 > idx)
+					ra(env);
 				else
-					rrb(env);
+					rra(env);
 				i++;
 			}
 		}
 	}
-}
-
-void	solve_stack(t_ps *env, int stack)
-{
-	int	i;
-
-	push_75(env, stack);
-	push_25(env);
-	i = 1;
-	while (i != env->len / stack)
-	{
+	sort_three(env);
+	while (lst_len(env->b) != 0)
 		pa(env);
-		i++;
-	}
-	sort_stack_b(env);
-}
-
-void	solver(t_ps *env)
-{
-	int	len;
-
-	len = lst_len(env->a);
-	if (len <= 10)
-		solve(env);
-	else if (len > 10 && len <= 100)
-		solve_stack(env, 4);
-	else if (len > 100 && len <= 500)
-		solve_stack(env, 8);
 }

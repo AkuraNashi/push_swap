@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   solver.c                                           :+:      :+:    :+:   */
+/*   find_lst.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lcamilo- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -12,55 +12,44 @@
 
 #include "../push_swap.h"
 
-void	sort_stack_b(t_ps *env)
+int	found_lowest(t_ps *env)
 {
-	int	idx;
-	int	i;
+	t_list_number	*head;
+	t_list_number	*tmp;
+	int				i;
 
-	while (lst_len(env->b) != 0)
+	i = 0;
+	head = env->a;
+	tmp = env->a;
+	while (env->a)
 	{
-		idx = found_highest(env);
-		if (idx == 1)
-			pa(env);
-		else
-		{
-			i = 1;
-			while (i < idx && found_highest(env) != 1)
-			{
-				if (lst_len(env->b) / 2 > idx)
-					rb(env);
-				else
-					rrb(env);
-				i++;
-			}
-		}
-	}
-}
-
-void	solve_stack(t_ps *env, int stack)
-{
-	int	i;
-
-	push_75(env, stack);
-	push_25(env);
-	i = 1;
-	while (i != env->len / stack)
-	{
-		pa(env);
+		if (tmp->value > env->a->value)
+			tmp = env->a;
 		i++;
+		env->a->index = i;
+		env->a = env->a->next;
 	}
-	sort_stack_b(env);
+	env->a = head;
+	return (tmp->index);
 }
 
-void	solver(t_ps *env)
+int	found_highest(t_ps *env)
 {
-	int	len;
+	t_list_number	*head;
+	t_list_number	*tmp;
+	int				i;
 
-	len = lst_len(env->a);
-	if (len <= 10)
-		solve(env);
-	else if (len > 10 && len <= 100)
-		solve_stack(env, 4);
-	else if (len > 100 && len <= 500)
-		solve_stack(env, 8);
+	i = 0;
+	head = env->b;
+	tmp = env->b;
+	while (env->b)
+	{
+		if (tmp->value < env->b->value)
+			tmp = env->b;
+		i++;
+		env->b->index = i;
+		env->b = env->b->next;
+	}
+	env->b = head;
+	return (tmp->index);
 }

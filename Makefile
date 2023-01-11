@@ -38,10 +38,13 @@ SRC 		= 	main.c						\
 				action/push.c				\
 				action/rotate.c				\
 				action/reverse_rotate.c		\
+				utils/find_lst.c			\
 				utils/utils_lst.c			\
 				utils/utils_lst2.c			\
+				sort/solver.c				\
 				sort/sort_3.c				\
-				sort/solver.c
+				sort/sort_big_stack.c		\
+				sort/sort_small.c
 
 # ------------  FILEPATHS  --------------------------------------------------- #
 SRCS 		= $(addprefix $(SRC_PATH),$(SRC))

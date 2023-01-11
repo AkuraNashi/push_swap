@@ -67,8 +67,7 @@ int	main(int ac, char **av)
 	unique(&env);
 	set_index(env.a);
 	solver(&env);
-//	lst_show(env.b);
+	lst_show(env.a);
 	free_lst(&env);
-	printf("nb action : [%d]\n", env.action);
 	return (0);
 }
