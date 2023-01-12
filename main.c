@@ -67,7 +67,6 @@ int	main(int ac, char **av)
 	unique(&env);
 	set_index(env.a);
 	solver(&env);
-	lst_show(env.a);
 	free_lst(&env);
 	return (0);
 }

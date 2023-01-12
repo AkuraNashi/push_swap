@@ -6,5 +6,8 @@
     <mapping directory="$PROJECT_DIR$/libftprintfgnl" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/pst" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/push_swap_visualizer" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/push_swap_visualizer/build/_deps/catch2-src" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/push_swap_visualizer/build/_deps/imgui-sfml-src" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/push_swap_visualizer/build/_deps/imgui-src" vcs="Git" />
   </component>
 </project>
