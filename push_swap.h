@@ -92,7 +92,7 @@ void			sort_three(t_ps *env);
 //////////////////////////SORT_BIG_STACK.C//////////////////////////////////////
 void			push_75(t_ps *env, int stack);
 void			push_25(t_ps *env);
-void			push_b(t_ps *env, int idx);
+void			push_b(t_ps *env, int idx, int stack);
 //////////////////////////////SORT_SMALL.C//////////////////////////////////////
 void			solve(t_ps *env);
 

@@ -18,7 +18,7 @@ void	push_75(t_ps *env, int stack)
 	int				i;
 	int				len_stack;
 
-	len_stack = env->len / stack;
+	len_stack = env->len / stack * 2;
 	while (len_stack != env->len) // lenstack < env->len marche pour 11 a 99 mais ne marche plus a 100+
 	{
 		tmp = env->a;
@@ -27,7 +27,7 @@ void	push_75(t_ps *env, int stack)
 		{
 			if (tmp->r_index <= len_stack)
 			{
-				push_b(env, i);
+				push_b(env, i, len_stack);
 				tmp = env->a;
 				i = 0;
 			}
@@ -64,7 +64,7 @@ void	push_25(t_ps *env)
 	}
 }
 
-void	push_b(t_ps *env, int idx)
+void	push_b(t_ps *env, int idx, int stack)
 {
 	int	i;
 
@@ -78,4 +78,6 @@ void	push_b(t_ps *env, int idx)
 		i++;
 	}
 	pb(env);
+	if (env->b->r_index <= stack / 2)
+		rb(env);
 }
