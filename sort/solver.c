@@ -41,10 +41,8 @@ void	solve_stack(t_ps *env, int stack)
 {
 	int	i;
 
-	//Trouver les 2/4, si le chiffre fait partir du 1/4, pb + rrb
 	push_75(env, stack);
 	push_25(env);
-	//327 action
 	i = 1;
 	while (i != env->len / stack)
 	{
