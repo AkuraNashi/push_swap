@@ -42,7 +42,9 @@ void	solve_stack(t_ps *env, int stack)
 	int	i;
 
 	push_75(env, stack);
+	printf("lst len push 75: [%d]\n", lst_len(env->b));
 	push_25(env);
+	printf("lst len push 25: [%d]\n", lst_len(env->b));
 	i = 1;
 	while (i != env->len / stack)
 	{
