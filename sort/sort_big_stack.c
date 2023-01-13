@@ -42,7 +42,6 @@ void	push_75(t_ps *env, int stack)
 void	push_25(t_ps *env)
 {
 	int	idx;
-	int	i;
 
 	while (lst_len(env->a))
 	{
@@ -51,14 +50,12 @@ void	push_25(t_ps *env)
 			pb(env);
 		else
 		{
-			i = 1;
-			while (i < idx && found_lowest(env) != 1)
+			while (found_lowest(env) != 1)
 			{
 				if (lst_len(env->a) / 2 > idx)
 					ra(env);
 				else
 					rra(env);
-				i++;
 			}
 		}
 	}
@@ -78,6 +75,6 @@ void	push_b(t_ps *env, int idx, int stack)
 		i++;
 	}
 	pb(env);
-	if (env->b->r_index <= stack / 2)
+	if (env->b->r_index <= stack / 2 && lst_len(env->b) > 1)
 		rb(env);
 }

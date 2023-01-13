@@ -15,23 +15,25 @@
 void	sort_stack_b(t_ps *env)
 {
 	int	idx;
-	int	i;
 
 	while (lst_len(env->b) != 0)
 	{
 		idx = found_highest(env);
 		if (idx == 1)
 			pa(env);
+		else if (idx == 2)
+		{
+			sb(env);
+			pa(env);
+		}
 		else
 		{
-			i = 1;
-			while (i < idx && found_highest(env) != 1)
+			while (found_highest(env) != 1)
 			{
 				if (lst_len(env->b) / 2 > idx)
 					rb(env);
 				else
 					rrb(env);
-				i++;
 			}
 		}
 	}
@@ -42,9 +44,9 @@ void	solve_stack(t_ps *env, int stack)
 	int	i;
 
 	push_75(env, stack);
-	printf("lst len push 75: [%d]\n", lst_len(env->b));
+//	printf("action 75 : [%d]\n", env->action); //174
 	push_25(env);
-	printf("lst len push 25: [%d]\n", lst_len(env->b));
+//	printf("action 25 : [%d]\n", env->action); //278
 	i = 1;
 	while (i != env->len / stack)
 	{

@@ -11,6 +11,7 @@
       <change beforePath="$PROJECT_DIR$/imgui.ini" beforeDir="false" afterPath="$PROJECT_DIR$/imgui.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/push_swap" beforeDir="false" afterPath="$PROJECT_DIR$/push_swap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sort/solver.c" beforeDir="false" afterPath="$PROJECT_DIR$/sort/solver.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sort/sort_big_stack.c" beforeDir="false" afterPath="$PROJECT_DIR$/sort/sort_big_stack.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,6 +99,8 @@
       <workItem from="1673522705594" duration="14000" />
       <workItem from="1673526750274" duration="839000" />
       <workItem from="1673545620111" duration="1346000" />
+      <workItem from="1673555157715" duration="930000" />
+      <workItem from="1673604903026" duration="3021000" />
     </task>
     <servers />
   </component>
