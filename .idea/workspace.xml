@@ -9,7 +9,9 @@
     <list default="true" id="75edfb0a-f5ed-409c-aa1b-135784eb616f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/imgui.ini" beforeDir="false" afterPath="$PROJECT_DIR$/imgui.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/push_swap" beforeDir="false" afterPath="$PROJECT_DIR$/push_swap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/push_swap.h" beforeDir="false" afterPath="$PROJECT_DIR$/push_swap.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sort/solver.c" beforeDir="false" afterPath="$PROJECT_DIR$/sort/solver.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sort/sort_big_stack.c" beforeDir="false" afterPath="$PROJECT_DIR$/sort/sort_big_stack.c" afterDir="false" />
     </list>
@@ -101,6 +103,7 @@
       <workItem from="1673545620111" duration="1346000" />
       <workItem from="1673555157715" duration="930000" />
       <workItem from="1673604903026" duration="3021000" />
+      <workItem from="1673795249799" duration="4894000" />
     </task>
     <servers />
   </component>

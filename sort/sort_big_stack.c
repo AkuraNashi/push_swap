@@ -12,14 +12,25 @@
 
 #include "../push_swap.h"
 
+int	val_aprox(float m)
+{
+	int	k;
+
+	k = (int) m;
+	if ((m - k) >= 0.5)
+		return ((int) m + 1);
+	else
+		return ((int) m);
+}
+
 void	push_75(t_ps *env, int stack)
 {
 	t_list_number	*tmp;
 	int				i;
 	int				len_stack;
 
-	len_stack = env->len / stack * 2;
-	while (len_stack != env->len) // lenstack < env->len marche pour 11 a 99 mais ne marche plus a 100+
+	len_stack = val_aprox((float)env->len / stack * 2);
+	while (len_stack <= env->len - val_aprox((float)env->len / stack * 2))
 	{
 		tmp = env->a;
 		i = 1;
@@ -35,7 +46,7 @@ void	push_75(t_ps *env, int stack)
 				tmp = tmp->next;
 			i++;
 		}
-		len_stack += env->len / stack;
+		len_stack += val_aprox((float)env->len / stack);
 	}
 }
 

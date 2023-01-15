@@ -16,18 +16,18 @@
 # include "./libftprintfgnl/includes/libft.h"
 
 typedef struct s_list_number{
-	int				value;
-	int				index;
-	int				r_index;
+	int						value;
+	int						index;
+	int						r_index;
 	struct s_list_number	*next;
-}		t_list_number;
+}	t_list_number;
 
 typedef struct s_ps{
-	t_list_number *a;
-	t_list_number *b;
-	int action;
-	int len;
-}		t_ps;
+	t_list_number	*a;
+	t_list_number	*b;
+	int				action;
+	int				len;
+}	t_ps;
 
 //////////////////////////////MAIN.C////////////////////////////////////////////
 void			error(void);
@@ -43,18 +43,19 @@ void			two_args(t_ps *env, char **av);
 void			lst_show(t_list_number *lst);
 void			lst_add_back(t_list_number **lst, t_list_number *new);
 void			lst_add_front(t_list_number **lst, t_list_number *new);
-t_list_number 	*lst_create(int content, int i);
-int 			lst_len(t_list_number *lst);
+t_list_number	*lst_create(int content, int i);
+int				lst_len(t_list_number *lst);
+
 //////////////////////////////UTILS_LST2.C//////////////////////////////////////
 int				solved(t_ps *env);
-void			unique (t_ps *env);
+void			unique(t_ps *env);
 void			check_unique(t_ps *env, int value, t_list_number *lst);
 void			free_lst(t_ps *env);
 void			set_index(t_list_number *lst);
 
 //////////////////////////////FIND_LST.C////////////////////////////////////////
-int 			found_highest(t_ps *env);
-int 			found_lowest(t_ps *env);
+int				found_highest(t_ps *env);
+int				found_lowest(t_ps *env);
 
 ////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////Action////////////////////////////////////////////
@@ -69,17 +70,16 @@ void			pb(t_ps *env);
 void			ss(t_ps *env);
 void			sb(t_ps *env);
 void			sa(t_ps *env);
+
 //////////////////////////////ROTATE.C//////////////////////////////////////////
 void			ra(t_ps *env);
 void			rb(t_ps *env);
 void			rr(t_ps *env);
+
 //////////////////////////REVERSE_ROTATE.C//////////////////////////////////////
 void			rra(t_ps *env);
 void			rrb(t_ps *env);
 void			rrr(t_ps *env);
-
-
-
 
 ////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////Sort/////////////////////////////////////////////

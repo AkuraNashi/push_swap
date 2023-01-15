@@ -44,9 +44,7 @@ void	solve_stack(t_ps *env, int stack)
 	int	i;
 
 	push_75(env, stack);
-//	printf("action 75 : [%d]\n", env->action); //174
 	push_25(env);
-//	printf("action 25 : [%d]\n", env->action); //278
 	i = 1;
 	while (i != env->len / stack)
 	{

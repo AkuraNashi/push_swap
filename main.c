@@ -12,6 +12,27 @@
 
 #include "push_swap.h"
 
+int	check_number(char *str)
+{
+	int	count;
+	int	i;
+
+	count = 0;
+	i = 0;
+	if (ft_strlen(str) > 1)
+	{
+		while (str[i])
+		{
+			if (str[i] == '-')
+				count++;
+			i++;
+		}
+	}
+	if (count > 1)
+		return (0);
+	return (1);
+}
+
 void	multiple_args(t_ps *env, int ac, char **av)
 {
 	int	i;
@@ -20,7 +41,10 @@ void	multiple_args(t_ps *env, int ac, char **av)
 	env->b = NULL;
 	while (i < ac)
 	{
-		lst_add_back(&env->a, lst_create(ft_atoi(av[i]), i));
+		if (check_number(av[i]))
+			lst_add_back(&env->a, lst_create(ft_atoi(av[i]), i));
+		else
+			error();
 		i++;
 	}
 }
@@ -34,7 +58,10 @@ void	two_args(t_ps *env, char **av)
 	i = 0;
 	while (str[i])
 	{
-		lst_add_back(&env->a, lst_create(ft_atoi(str[i]), i));
+		if (check_number(str[i]))
+			lst_add_back(&env->a, lst_create(ft_atoi(str[i]), i));
+		else
+			error();
 		i++;
 	}
 	i = 0;
