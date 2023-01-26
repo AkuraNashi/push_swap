@@ -14,6 +14,7 @@
 # define PUSH_SWAP_H
 
 # include "./libftprintfgnl/includes/libft.h"
+#include <limits.h>
 
 typedef struct s_list_number{
 	int						value;
@@ -39,6 +40,11 @@ void			two_args(t_ps *env, char **av);
 //////////////////////////////Folder////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
 
+//////////////////////////////CHECK.C///////////////////////////////////////////
+
+int    			ft_atoi_limit(char *str);
+void			check_string(char *str);
+int				check_number(char *str);
 //////////////////////////////UTILS_LST.C///////////////////////////////////////
 void			lst_show(t_list_number *lst);
 void			lst_add_back(t_list_number **lst, t_list_number *new);

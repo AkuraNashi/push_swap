@@ -12,27 +12,6 @@
 
 #include "push_swap.h"
 
-int	check_number(char *str)
-{
-	int	count;
-	int	i;
-
-	count = 0;
-	i = 0;
-	if (ft_strlen(str) > 1)
-	{
-		while (str[i])
-		{
-			if (str[i] == '-')
-				count++;
-			i++;
-		}
-	}
-	if (count > 1)
-		return (0);
-	return (1);
-}
-
 void	multiple_args(t_ps *env, int ac, char **av)
 {
 	int	i;
@@ -41,8 +20,9 @@ void	multiple_args(t_ps *env, int ac, char **av)
 	env->b = NULL;
 	while (i < ac)
 	{
+		check_string(av[i]);
 		if (check_number(av[i]))
-			lst_add_back(&env->a, lst_create(ft_atoi(av[i]), i));
+			lst_add_back(&env->a, lst_create(ft_atoi_limit(av[i]), i));
 		else
 			error();
 		i++;
@@ -58,8 +38,9 @@ void	two_args(t_ps *env, char **av)
 	i = 0;
 	while (str[i])
 	{
+		check_string(str[i]);
 		if (check_number(str[i]))
-			lst_add_back(&env->a, lst_create(ft_atoi(str[i]), i));
+			lst_add_back(&env->a, lst_create(ft_atoi_limit(str[i]), i));
 		else
 			error();
 		i++;
@@ -91,9 +72,11 @@ int	main(int ac, char **av)
 	else
 		return (0);
 	env.len = lst_len(env.a);
+	if (env.len == 1)
+		return (0);
 	unique(&env);
+	solved(&env);
 	set_index(env.a);
-//	solved(&env);
 	solver(&env);
 	free_lst(&env);
 	return (0);

@@ -41,6 +41,7 @@ SRC 		= 	main.c						\
 				utils/find_lst.c			\
 				utils/utils_lst.c			\
 				utils/utils_lst2.c			\
+				utils/check.c				\
 				sort/solver.c				\
 				sort/sort_3.c				\
 				sort/sort_big_stack.c		\
