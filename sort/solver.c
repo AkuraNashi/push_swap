@@ -59,7 +59,9 @@ void	solver(t_ps *env)
 	int	len;
 
 	len = lst_len(env->a);
-	if (len <= 10)
+	if (len == 2)
+		sa(env);
+	else if (len <= 10)
 		solve(env);
 	else if (len > 10 && len <= 100)
 		solve_stack(env, 4);

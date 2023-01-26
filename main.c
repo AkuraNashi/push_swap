@@ -93,6 +93,7 @@ int	main(int ac, char **av)
 	env.len = lst_len(env.a);
 	unique(&env);
 	set_index(env.a);
+//	solved(&env);
 	solver(&env);
 	free_lst(&env);
 	return (0);
