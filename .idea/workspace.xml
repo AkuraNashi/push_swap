@@ -8,10 +8,10 @@
   <component name="ChangeListManager">
     <list default="true" id="75edfb0a-f5ed-409c-aa1b-135784eb616f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/push_swap" beforeDir="false" afterPath="$PROJECT_DIR$/push_swap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/push_swap.h" beforeDir="false" afterPath="$PROJECT_DIR$/push_swap.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/check.c" beforeDir="false" afterPath="$PROJECT_DIR$/utils/check.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,6 +107,10 @@
       <workItem from="1674735958248" duration="676000" />
       <workItem from="1674745414369" duration="6000" />
       <workItem from="1674750029719" duration="2612000" />
+      <workItem from="1674764285395" duration="12000" />
+      <workItem from="1674775835341" duration="5000" />
+      <workItem from="1674822394369" duration="671000" />
+      <workItem from="1674834395798" duration="2251000" />
     </task>
     <servers />
   </component>

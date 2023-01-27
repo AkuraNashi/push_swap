@@ -48,7 +48,7 @@ void	check_string(char *str)
 	i = 0;
 	while (str[i])
 	{
-		if (str[i] >= '0' && str[i] <= '9')
+		if ((str[i] >= '0' && str[i] <= '9') || str[0] == '-' || str[0] == '+')
 			i++;
 		else
 			error();

@@ -75,9 +75,11 @@ int	main(int ac, char **av)
 	if (env.len == 1)
 		return (0);
 	unique(&env);
-	solved(&env);
+	if (solved(&env))
+		return (0);
 	set_index(env.a);
 	solver(&env);
+//	lst_show(env.a);
 	free_lst(&env);
 	return (0);
 }
