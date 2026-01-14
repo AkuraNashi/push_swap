@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: aashara- <aashara-@student.42.fr>          +#+  +:+       +#+         #
+#    By: marvin <marvin@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/11/20 13:57:06 by aashara-          #+#    #+#              #
-#    Updated: 2020/08/31 11:59:06 by aashara-         ###   ########.fr        #
+#    Updated: 2025/09/30 16:42:04 by lecamilo         ###   ####lausanne.ch    #
 #                                                                              #
 # **************************************************************************** #
 
@@ -98,9 +98,9 @@ DEPS	=		$(OBJS:.o=.d)
 # ------------  FLAGS  ------------------------------------------------------- #
 CC		=		gcc
 RM		=		rm -rf
-CFLGS	=		-Wall -Werror -Wextra
+CFLGS	=		-Werror -Wextra -Wall
 IFLGS	=		-I $(HDR_DIR)
-DFLGS	=		-MMD -MP -O1
+#DFLGS	=		-MMD -MP -O1
 
 # ------------  RULES  ------------------------------------------------------- #
 .PHONY: all clean fclean re

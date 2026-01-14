@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr_base.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lcamilo- <lcamilo-@student.42.fr>          +#+  +:+       +#+        */
+/*   By: lecamilo <lecamilo@42lausanne.ch>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/16 23:37:34 by lcamilo-          #+#    #+#             */
-/*   Updated: 2022/10/24 22:39:45 by lcamilo-         ###   ########.fr       */
+/*   Updated: 2025/09/30 16:59:40 by lecamilo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_printf.h"
 
 static int	putnbr_base(unsigned long long n, char *base,
 		unsigned long long size, int i)
@@ -24,7 +24,7 @@ static int	putnbr_base(unsigned long long n, char *base,
 	return (i);
 }
 
-int	ft_putnbr_base(unsigned long long n, char *base, int nb)
+int	ft_putnbr_base(long long n, char *base, int nb)
 {
 	if (n < 0)
 		return (putnbr_base(n * -1, base, nb, 0) + 1);

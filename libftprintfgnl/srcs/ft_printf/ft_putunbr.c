@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putunbr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lcamilo- <lcamilo-@student.42.fr>          +#+  +:+       +#+        */
+/*   By: lecamilo <lecamilo@42lausanne.ch>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/16 23:37:34 by lcamilo-          #+#    #+#             */
-/*   Updated: 2022/10/25 00:41:11 by lcamilo-         ###   ########.fr       */
+/*   Updated: 2025/09/30 17:41:23 by lecamilo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_printf.h"
 
 static int	putunbr(unsigned int n, int i)
 {
@@ -25,10 +25,5 @@ static int	putunbr(unsigned int n, int i)
 
 int	ft_putunbr(unsigned int n)
 {
-	if (n < 0)
-	{
-		ft_putchar('-');
-		return (putunbr(n * -1, 1));
-	}
 	return (putunbr(n, 0));
 }

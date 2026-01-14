@@ -3,17 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lcamilo- <lcamilo-@student.42.fr>          +#+  +:+       +#+        */
+/*   By: lecamilo <lecamilo@42lausanne.ch>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/23 03:14:34 by lcamilo-          #+#    #+#             */
-/*   Updated: 2022/10/25 22:54:50 by lcamilo-         ###   ########.fr       */
+/*   Updated: 2025/09/30 16:59:37 by lecamilo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_printf.h"
 
 static int	ft_parsing(va_list args, const char c)
-{	
+{
 	if (c == 'c')
 		return (ft_putchar(va_arg(args, int)));
 	if (c == 's')

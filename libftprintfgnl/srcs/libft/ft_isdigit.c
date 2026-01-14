@@ -14,7 +14,7 @@
 
 int	ft_isdigit(int c)
 {
-	if (c >= -2147483648 && c <= 2147483647)
+	if (c >= '0' && c <= '9')
 		return (1);
 	return (0);
 }

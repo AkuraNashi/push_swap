@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.h                                    :+:      :+:    :+:   */
+/*   get_next_line_bonus.h                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lcamilo- <lcamilo-@student.42.fr>          +#+  +:+       +#+        */
+/*   By: lecamilo <lecamilo@42lausanne.ch>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/27 00:28:51 by lcamilo-          #+#    #+#             */
-/*   Updated: 2022/10/27 21:07:41 by lcamilo-         ###   ########.fr       */
+/*   Updated: 2025/09/30 17:43:02 by lecamilo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 # include <stdio.h>
 # include <fcntl.h>
 # include <stdlib.h>
+# include "libft.h"
 
 # ifndef BUFFER_SIZE
 #  define BUFFER_SIZE	10
@@ -28,9 +29,9 @@ int		read_buffer(char *buffer);
 void	free_buffer(char **buffer, int fd);
 int		read_line(char **line, int fd, int i);
 //gnl_utils.c
-char	*ft_strchr(const char *s, int c);
+// char	*ft_strchr(const char *s, int c);
 char	*ft_strlendup(const char *s, int i);
-size_t	ft_strlen(const char *s);
-size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize);
+// size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize);
 char	*ft_strlenjoin(char const *s1, char const *s2, int i);
 #endif
+

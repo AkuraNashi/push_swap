@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aashara- <aashara-@student.42.fr>          +#+  +:+       +#+        */
+/*   By: lecamilo <lecamilo@42lausanne.ch>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/21 15:42:59 by aashara-          #+#    #+#             */
-/*   Updated: 2020/08/24 16:22:28 by aashara-         ###   ########.fr       */
+/*   Updated: 2025/09/30 16:55:35 by lecamilo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,6 +53,7 @@ int		ft_tolower(int c);
 char	*ft_strchr(const char *s, int c);
 char	*ft_strrchr(const char *s, int c);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
+int		ft_strcmp(const char *s1, const char *s2);
 void	*ft_memchr(const void *s, int c, size_t n);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
@@ -84,16 +85,8 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 
 ////////////////////////////PRINTF//////////////////////////////////////////////
 int		ft_printf(const char *s, ...);
-int		ft_putchar(char c);
-int		ft_putnbr(int n);
-int		ft_putunbr(unsigned int n);
-int		ft_putnbr_base(unsigned long long n, char *base, int nb);
-int		ft_putstr(char *s);
+
 ////////////////////////////GNL////////////////////////////////////////////////
 char	*get_next_line(int fd);
-int		read_buffer(char *buffer);
-void	free_buffer(char **buffer, int fd);
-int		read_line(char **line, int fd, int i);
-char	*ft_strlendup(const char *s, int i);
-char	*ft_strlenjoin(char const *s1, char const *s2, int i);
+
 #endif
