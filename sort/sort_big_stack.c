@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   sort_big_stack.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lcamilo- <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: lecamilo <lecamilo@42lausanne.ch>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/29 13:59:43 by lcamilo-          #+#    #+#             */
-/*   Updated: 2022/12/29 13:59:44 by lcamilo-         ###   ########.fr       */
+/*   Updated: 2026/01/14 13:07:48 by lecamilo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,7 +54,7 @@ void	push_25(t_ps *env)
 {
 	int	idx;
 
-	while (lst_len(env->a))
+	while (lst_len(env->a) > 3)
 	{
 		idx = found_lowest(env);
 		if (idx == 1)
@@ -70,6 +70,7 @@ void	push_25(t_ps *env)
 			}
 		}
 	}
+	sort_three(env);
 }
 
 void	push_b(t_ps *env, int idx, int stack)

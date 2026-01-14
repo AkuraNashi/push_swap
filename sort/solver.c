@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   solver.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lcamilo- <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: lecamilo <lecamilo@42lausanne.ch>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/29 13:59:43 by lcamilo-          #+#    #+#             */
-/*   Updated: 2022/12/29 13:59:44 by lcamilo-         ###   ########.fr       */
+/*   Updated: 2026/01/14 13:15:12 by lecamilo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,16 +41,8 @@ void	sort_stack_b(t_ps *env)
 
 void	solve_stack(t_ps *env, int stack)
 {
-	int	i;
-
 	push_75(env, stack);
 	push_25(env);
-	i = 1;
-	while (i != env->len / stack)
-	{
-		pa(env);
-		i++;
-	}
 	sort_stack_b(env);
 }
 
@@ -64,7 +56,7 @@ void	solver(t_ps *env)
 	else if (len <= 10)
 		solve(env);
 	else if (len > 10 && len <= 100)
-		solve_stack(env, 4);
+		solve_stack(env, 6);
 	else if (len > 100 && len <= 500)
-		solve_stack(env, 8);
+		solve_stack(env, 20);
 }

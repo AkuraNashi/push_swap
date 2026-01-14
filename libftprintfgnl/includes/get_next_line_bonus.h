@@ -6,7 +6,7 @@
 /*   By: lecamilo <lecamilo@42lausanne.ch>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/27 00:28:51 by lcamilo-          #+#    #+#             */
-/*   Updated: 2025/09/30 17:43:02 by lecamilo         ###   ########.fr       */
+/*   Updated: 2026/01/14 13:16:55 by lecamilo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,4 +34,3 @@ char	*ft_strlendup(const char *s, int i);
 // size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize);
 char	*ft_strlenjoin(char const *s1, char const *s2, int i);
 #endif
-

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lcamilo- <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: lecamilo <lecamilo@42lausanne.ch>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/22 15:15:30 by lcamilo-          #+#    #+#             */
-/*   Updated: 2022/12/22 15:15:31 by lcamilo-         ###   ########.fr       */
+/*   Updated: 2026/01/14 13:15:14 by lecamilo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,7 +79,6 @@ int	main(int ac, char **av)
 		return (0);
 	set_index(env.a);
 	solver(&env);
-//	lst_show(env.a);
 	free_lst(&env);
 	return (0);
 }

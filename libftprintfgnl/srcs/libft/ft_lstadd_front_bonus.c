@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstadd_front_bonus.c                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lcamilo- <lcamilo-@student.42.fr>          +#+  +:+       +#+        */
+/*   By: lecamilo <lecamilo@42lausanne.ch>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/17 20:52:51 by lcamilo-          #+#    #+#             */
-/*   Updated: 2022/10/17 21:22:35 by lcamilo-         ###   ########.fr       */
+/*   Updated: 2026/01/14 13:16:11 by lecamilo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,5 +18,5 @@ void	ft_lstadd_front(t_list **lst, t_list *new)
 	{
 		new->next = *lst;
 		*lst = new;
-	}	
+	}
 }

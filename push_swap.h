@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   push_swap.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lcamilo- <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: lecamilo <lecamilo@42lausanne.ch>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/22 14:57:18 by lcamilo-          #+#    #+#             */
-/*   Updated: 2022/12/22 14:57:19 by lcamilo-         ###   ########.fr       */
+/*   Updated: 2026/01/14 13:15:40 by lecamilo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,14 +16,16 @@
 # include "./libftprintfgnl/includes/libft.h"
 # include <limits.h>
 
-typedef struct s_list_number{
+typedef struct s_list_number
+{
 	int						value;
 	int						index;
 	int						r_index;
 	struct s_list_number	*next;
 }	t_list_number;
 
-typedef struct s_ps{
+typedef struct s_ps
+{
 	t_list_number	*a;
 	t_list_number	*b;
 	int				action;

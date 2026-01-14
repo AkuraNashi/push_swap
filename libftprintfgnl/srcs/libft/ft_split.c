@@ -21,7 +21,7 @@ static int	ft_count(char const *str, char delim)
 	i = 0;
 	count = 0;
 	while (str[i])
-	{	
+	{
 		if (str[i] != delim && (str[i + 1] == delim || !str[i + 1]))
 			count++;
 		i++;
